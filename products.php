@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>||Home Page||</title>
+	<title>||Products Page||</title>
 </head>
 <body>
 	<table align = "center"   width= 100% >
@@ -31,49 +31,9 @@
         		</ul>
     		</td>
     		
-			<!-- part for home page  starts-->
+			<!-- part for Product page  starts-->
 
-    		<td colspan="4" align="center">
-    			<iframe src="https://images.indianexpress.com/2018/04/oneplus-6-mockup-video-759.jpg" height="425px" width= "760px"></iframe>
-    			<table>
-    				<tr>
-    					<td>
-    						<img src="https://cdn2.gsmarena.com/vv/bigpic/oneplus-6-.jpg">
-    						<br>One Plus 6 <br>
-    						8/6 GB RAM & 64/128 GB ROM <br>
-    						$900
-
-
-    					</td>
-    					<td>
-    						<img src="https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-x.jpg">
-    						<br>Iphone X <br>
-    						8/6 GB RAM & 64/128 GB ROM <br>
-    						$1900
-
-
-    					</td>
-    					<td>
-    						<img src="https://cdn2.gsmarena.com/vv/bigpic/xiaomi-mi8.jpg">
-    						<br>Xiaomi MI 8 <br>
-    						8/6 GB RAM & 64/128 GB ROM <br>
-    						$1100
-
-
-    					</td>
-    					<td>
-    						<img src="https://cdn2.gsmarena.com/vv/bigpic/samsung-galaxy-j6-j600.jpg">
-    						<br>Galaxy J6 <br>
-    						8/6 GB RAM & 64/128 GB ROM <br>
-    						$1200
-
-
-    					</td>
-    				</tr>
-    			</table>
-    		</td>
-
-    		<!-- part for home page ends -->
+    		<!-- part for Product page ends -->
 		</tr>
 		<td colspan="2">
 			<h2>Let us help you</h2>
