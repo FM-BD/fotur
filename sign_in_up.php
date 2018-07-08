@@ -7,7 +7,7 @@
 	<table align = "center"   width= 100% >
 		<tr>
 			<td width= 20%>
-				<h1><strong>Welcome to Fotur</strong></h1>
+				<h1><strong>Welcome to <a href="index.php">Fotur</a></strong></h1>
 
 			</td>
 			<td colspan="3" width="60%" align="center">
@@ -17,8 +17,8 @@
 				</form>       
     		</td>
     		<td>
-    			<h2>Sign In Here</h2>
-    			<p>Don't have an account. Register Here</p>			
+    			<h2><a href="sign_in_up.php">Sign In</a></h2>
+    			<p>Don't have an account.<a href="register.php">Register</a></p>		
         	</td>
         </tr>
 		<tr>
@@ -27,8 +27,10 @@
                 <h2>Sign In</h2>
              
                 <form action="v.php" method="get">
-                    <input type="text" name="user_name" style="width: 200px; height: 30px" >
-                    <input type="password" name="password"style="width: 200px; height: 30px">
+                	<label>Name</label>
+                    <input type="text" name="user_name"  style="width: 200px; height: 30px" >
+                    <label>Password</label>
+                    <input type="password" name="password"  style="width: 200px; height: 30px">
                     <input type="submit"  value="Login" name= "Login" style="width: 140px; height: 35px; ">
                 </form>
             </td>
@@ -42,16 +44,17 @@
 		<td colspan="2">
 			<h2>Let us help you</h2>
 			<ul>
-				<li>Help Center</li>
-				<li>Customer Care</li>
+				<li><a href="help.php">Help Center</a></li>
+				<li><a href="customer_care.php">Customer Care</a></li>
+				<li><a href="contact_us.php">Contact Us</a></li>
 			</ul>	
 		</td>
 		<td colspan="2" align="center">
 			<h2>Get to know us</h2>
 			<ul>
-				<li>About us</li>
-				<li>Terms & Conditions</li>
-				<li>Privacy Agreement</li>
+				<li><a href="about.php">About us</a></li>
+				<li><a href="terms_condition.php">Terms & Conditions</a></li>
+				<li><a href="privacy_agreement.php">Privacy Agreement</a></li>
 			</ul>
 		</td>
 		<td>

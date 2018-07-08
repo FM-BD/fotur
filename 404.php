@@ -7,8 +7,7 @@
 	<table align = "center"   width= 100% >
 		<tr>
 			<td width= 20%>
-				<h1><strong>Welcome to Fotur</strong></h1>
-
+				<h1><strong>Welcome to <a href="index.php">Fotur</a></strong></h1>
 			</td>
 			<td colspan="3" width="60%" align="center">
 				<form action="v.php" method="get">
@@ -23,11 +22,11 @@
         </tr>
 		<tr>
 			<td >
-				<h2>Products</h2>
+				<h2><a href="products.php">Products</a></h2>
         		<ul>
-        			<li>Mobile</li>
-        			<li>HeadPhone</li>
-        			<li>Charger</li>
+        			<li><a href="p_mobile.php">Mobile</a></li>
+        			<li><a href="p_headPhone.php">HeadPhone</a></li>
+        			<li><a href="p_charger.php">Charger</a></li>
         		</ul>
     		</td>
      <tr>		
