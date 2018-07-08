@@ -30,10 +30,11 @@
         			<li>Charger</li>
         		</ul>
     		</td>
-    		
+     <tr>		
 			<!-- part for 404 page  starts-->
-			<h1>Sorry, The Content you are looking for dose not exsist.</h1>
+			<td colspan = "5"><h1>Sorry, The Content you are looking for dose not exsist.</h1></td>
     		<!-- part for 404 page ends -->
+    </tr> 
 		</tr>
 		<td colspan="2">
 			<h2>Let us help you</h2>
