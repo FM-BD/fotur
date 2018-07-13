@@ -23,21 +23,39 @@
         </tr>
 		<tr>
          <tr>
-             <td colspan="2" align="center">
-                <h2>Sign In</h2>
+             <td colspan="5" align="center">
+                <br><br><br>
+                <h1>Sign In</h1>
              
-                <form action="v.php" method="get">
-                	<label>Name</label>
-                    <input type="text" name="user_name"  style="width: 200px; height: 30px" >
-                    <label>Password</label>
-                    <input type="password" name="password"  style="width: 200px; height: 30px">
-                    <input type="submit"  value="Login" name= "Login" style="width: 140px; height: 35px; ">
-                </form>
+				<table>
+					<tr>
+						<form action="user_admin.php" method="post">
+						<td align="left"><label>Name</label></td>
+						<td><input type="text" name="user_name"  style="width: 300px; height: 30px" ></td>
+					</tr>
+					<tr>
+						<td align="left"><label>Password</label></td>
+						<td><input type="password" name="password"  style="width: 300px; height: 30px"></td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center"><input type="submit"  value="Login" name= "login" style="width: 140px; height: 35px; "></td>
+						</form>
+					</tr>
+					<tr>
+						<td colspan="2" align="right">*Forgot password ?</td>
+					</tr>
+				</table>
+				
+
+
+
+                <br>
+                <br>
+                <br><br><br>
+
+                
             </td>
-            <td colspan="3" align="center">
-                <h2>Register</h2>
-                <h3> add register data here</h3>
-            </td> 
+             
          </tr>   
 			 
 		</tr>

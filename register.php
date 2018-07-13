@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>||Help Page||</title>
+	<title>||REGISTER||</title>
 </head>
 <body>
 	<table align = "center"   width= 100% >
@@ -30,121 +30,157 @@
         			<li>Charger</li>
         		</ul>
     		</td>
+
     		
 		<!-- part for Register page  starts-->
-		<tr>
+		
+			<td colspan="3" align="center">
+				<h2 align="center">REGISTRATION</h2>
+				<form action='registration_Validation.php' method='post'>						
+				<table>
+				<tr>
+					<td style="width: 200px;">First Name</td>
+					<td>:</td>
+					<td>
+						<input type="text" name="first_name" style="width:400px;height:30px" 
+						placeholder="First Name">		
+					</td>
+				</tr>
+				<tr><td colspan="3"><hr/"></td></tr>
 
-			<form action="validate.php" method="post">
-				<table  align="center" height="100" width="500" >
-						<tr>
-							<td align="center"><label>Name</label></td>
-							<td>
-								<input type="text" name="name" placeholder="Please Enter your name" />
-							</td>
-						</tr>
-						
-						<tr>
-						<td align="center"><label>Password</label></td>
-						<td>
-							<input type="text" name="pass" placeholder="Enter your Password"/><br/>
-								policy *must be 8 in lenght & *must include number & charecter.
-						</td>
-					</tr>
-					<tr>
-						<td align="center"><label>Confirm Password</label></td>
-						<td><input type="text" name="c_pass" placeholder="ReEnter your Password"/></td>
-					</tr>
-					<tr>
-						<td align="center"><label>E-mail</label></td>
-						<td><input type="text" name="email" placeholder="Enter your E-mail"/></td>
-					</tr>
-					<tr>
-						<td align="center"> <label>Phone</label></td>
-						<td><input type="text" name="phone" placeholder="Enter your Phone No"/></td>
-					</tr>
-					<tr>
-						<td align="center"><label>Gender</label></td>
-						<td>
-							<input type="radio" name="gender" value="Male"/>Male
-							<input type="radio" name="gender" value="Female"/>Female</td>
-						</td>
-					</tr>
-					<!-- <tr>
-						<td><label>Blood Group </label></td>
-						<td>
-							<select name="blood">
-								<option>B +ve</option>
-								<option>B -ve</option>
-								<option>A +ve</option>
-								<option>A -ve</option>
-								<option>AB +ve</option>
-								<option>AB -ve</option>
-								<option>O +ve</option>
-								<option>O -ve</option>
-							</select>
-						</td>
-					</tr> -->
-					<tr>
-						<td align="center"><label>Date of Birth</label></td>
-						<td><input type="Date" name="date" /></td>
-					</tr>
+				<tr>
+					<td style="width: 200px;">Last Name</td>
+					<td>:</td>
+					<td><input type="text" name="last_name"style="width:400px;height:30px" placeholder="Last Name"></td>
+				</tr>
+				<tr><td colspan="3"><hr/"></td></tr>
 
-					<tr>
-						<td><label>Address</label></td>
-						<td>
-							<input  type="text"  name="address"  />
-						</td>
-					</tr>
-					<tr>
-						<td><label>City </label></td>
-						<td>
-							<select name="city">
-								<option>Dhaka</option>
-								<option>Chittagong</option>
-								<option>Khulna</option>
-								<option>Shylet</option>
-								<option>Rajshahi</option>
-								<option>Rangpur</option>
-								<option>Barisal</option>
+				<tr>
+					<td style="width: 200px;">Email</td>
+					<td>:</td>
+					<td><input type="text" name="email"style="width:400px;height:30px" placeholder="Email Address"></td>
+				</tr>
+				<tr><td colspan="3"><hr/"></td></tr>
+
+				<tr>
+					<td style="width: 200px;">User Name</td>
+					<td>:</td>
+					<td><input type="text" name="user_name" style="width:400px;height:30px" placeholder="User Name"></td>
+				</tr>
+				<tr><td colspan="3"><hr/"></td></tr>
+
+				<tr>
+					<td style="width: 200px;">Password</td>
+					<td>:</td>
+					<td><input type="password" name="password" style="width:400px;height:30px" placeholder="Password"></td>
+				</tr>
+				<tr><td colspan="3"><hr/"></td></tr>
+				<tr>
+					<td style="width: 200px;">Confirm Password</td>
+					<td>:</td>
+					<td><input type="password" name="confirmPassword" style="width:400px;height:30px" placeholder="Confirm Password"></td>
+				</tr>
+				<tr><td colspan="3"><hr/"></td></tr>
+
+				<tr>
+					<td style="width: 200px;">Phone</td>
+					<td>:</td>
+					<td><input type="text" name="phone" style="width:400px;height:30px" placeholder="Phone Number"></td>
+				</tr>
+				<tr><td colspan="3"><hr/"></td></tr>
+
+				<tr>
+					<td style="width: 200px;">Gender</td>
+					<td>:</td>
+					<td colspan="3">
+							<input type="radio" name="gender" value="male">Male
+							<input type="radio" name="gender" value="female">Female
+							<input type="radio" name="gender" value="other">Other
+					</td>
+				</tr>
+				<tr><td colspan="3"><hr/"></td></tr>
+
+				<tr>
+					<td style="width: 200px;">Date of Birth</td>
+					<td>:</td>
+					<td colspan="3">
+							<input type="text" name="day"  style="width: 40px" placeholder="DD">/
+							<input type="text" name="month"  style="width: 40px" placeholder="MM">/
+							<input type="text" name="year"  style="width: 70px" placeholder="YYYY"> &nbsp (Day/Month/Year)
+					</td>
+				</tr>
+				<tr><td colspan="3"><hr/"></td></tr>
+				<tr>
+					<td style="width: 200px;">Address</td>
+					<td>:</td>
+					<td><input type="text" name="address" style="width:400px;height:30px" placeholder="Address"></td>
+				</tr>
+				<tr><td colspan="3"><hr/"></td></tr>
+
+				<tr>
+					<td style="width: 200px;">City</td>
+					<td>:</td>
+					<td>
+						<select name="city" style="width:400px;height:30px">
+								<option value="Dhaka">Dhaka</option>
+								<option value="Chittagong">Chittagong</option>
+								<option value="khulna">Khulna</option>
+								<option value="shylet">Shylet</option>
+								<option value="rajshahi">Rajshahi</option>
+								<option value="rangpur">Rangpur</option>
+								<option value="barisal">Barisal</option>
+								<option value="Madaripur">Madaripur</option>
+								<option value="Faridpur">Faridpur</option>
 							</select>
-						</td>
-					</tr>
-					<tr>
-						<td><label>Area </label></td>
-						<td>
-							<select name="area">
-								<option>Bonani</option>
-								<option>Mirpur</option>
-								<option>Uttra</option>
-								<option>Dhanmondi</option>
-								<option>Mohamapur</option>
-								<option>Motijhil</option>
-								<option>Gulshan</option>
-								<option>Others</option>
+					</td>
+				</tr>
+				<tr><td colspan="3"><hr/"></td></tr>
+
+				<tr>
+					<td style="width: 200px;">Postal Code</td>
+					<td>:</td>
+					<td><input type="text" name="postal_code" style="width:400px;height:30px" placeholder="Postal Code"></td>
+				</tr>
+				<tr><td colspan="3"><hr/"></td></tr>
+
+				<tr>
+					<td style="width: 200px;">Country</td>
+					<td>:</td>
+					<td>
+						<select name="country" style="width:400px;height:30px">
+								<option value="Bangladsh">Bangladsh</option>
+								<option value="India">India</option>
+								<option value="China">China</option>
 						</select>
-						</td>
-					</tr>
-					<tr>
-						<td><label>Image</label></td>
-						<td>
-							<input type="file" name="filename" accept="image/gif, image/jpeg, image/png">
-						</td>
-					</tr>
-					<tr >
-						<td>
-							<input type="checkbox"/>
-							I agree all the terms and condition & information is true.	
-						</td>
-					</tr>
+				</tr>
+				<tr><td colspan="3"><hr/"></td></tr>
 
-						<tr align="center" >
-							<td>
-								<input type="Submit" name="submit" value="Submit">
-							</td>
-						</tr>
-				</table>
-			</form> 
+				<tr >
+						<td colspan="3" >
+							<input type="checkbox" name="agree" />
+							I agree all the terms and condition & information are True.	
+						</td>
+				</tr>
+				</tr>
+				<tr><td colspan="3"><hr/"></td></tr>
+
+				<tr>
+					<td colspan="2"  align="center" >
+						<input type="submit" name="submit" value="Submit" style="width:120px;height:30px">
+					</td>
+					<td>
+						<input type="reset" name="reset" value="Reset" style="width:100px;height:30px">
+					</td>
+				</tr>
+
+						</table>
+			
+					
+				</form>
+				<br><br><br>
+			</td>
 		</tr>
+			
 		
 		<!-- part for Register page ends -->
 		</tr>

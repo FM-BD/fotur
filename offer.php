@@ -46,9 +46,8 @@
     			<table>
     				<tr>
     					<td>
-    						<a href="product_details.php"><img src="https://cdn2.gsmarena.com/vv/bigpic/oneplus-6-.jpg"></a><br>
-                            <a href="product_details.php">One Plus 6</a>
-    						<br>
+    						<img src="https://cdn2.gsmarena.com/vv/bigpic/oneplus-6-.jpg">
+    						<br>One Plus 6 <br>
     						8/6 GB RAM & 64/128 GB ROM <br>
     						$900
 
