@@ -201,7 +201,7 @@ if(isset($_POST["submit"]))
         echo "Your gender : ".$_POST["gender"];
     } 
   }
-  else 
+  else
   {
     echo "Field can't be empty!!!";
   }

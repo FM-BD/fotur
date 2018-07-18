@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>||About Page||</title>
+    <title>||Home Page||</title>
 </head>
 <body>
     <table align = "center"   width= 100% >
@@ -36,32 +36,40 @@
                     <li><a href="p_headPhone.php">HeadPhone</a></li>
                     <li><a href="p_charger.php">Charger</a></li>
                 </ul>
+            </td>       
+        </tr>
+         <tr>
+             <td colspan="5" align="center">
+                <br><br><br>
+                <h1>Forgot Password ??</h1>
+             
+				<table>
+					<tr>
+						<form action="user_admin.php" method="post">
+						<td align="left"><label>*Email</label></td>
+						<td><input type="text" name="email"  style="width: 300px; height: 30px" ></td>
+					</tr>
+					<tr>
+						<td align="left"><label>Last known Password</label></td>
+						<td><input type="password" name="password"  style="width: 300px; height: 30px"></td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center"><input type="submit"  value="Submit" name= "Submit" style="width: 140px; height: 35px; "></td>
+						</form>
+					</tr>
+				</table>
+
+                <br>
+                <br>
+                <br><br><br>
+
+                
             </td>
-    		
-			<!-- part for About page  starts-->
-		
-			<td align="center" colspan="2">
-				<h3 align="center">About Us</h3>
-				<p>
-				Launched in 2018, Fotur is BD's online shopping destination of choice<br> 
-				now only present in Bangladesh. Supported by a wide range of tailored<br>
-				marketing,data and service solutions. Various types of products available <br>
-				in Futur.It offers a diverse assortment of products in categories ranging<br>
-				from consumer electronics. Focused on providing an excellent customer <br>
-				experience,it offers multiple payment methods including cash-on-delivery,<br>
-				comprehensive customer care and hassle-free returns.Fotur is owned by <br>
-				Futur Bangladesh Limited.</p>
-			
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			</td>
-			<td colspan="1">
-				
-			</td>
-
+             
+         </tr>   
+			 
 		</tr>
-
-    		<!-- part for About page ends -->
-        <td colspan="2">
+		<td colspan="2">
             <h2>Let us help you</h2>
             <ul>
                 <li><a href="help.php">Help Center</a></li>

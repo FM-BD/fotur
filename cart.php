@@ -1,16 +1,15 @@
-    <!--  --><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>||Cart||</title>
+    <title>||Home Page||</title>
 </head>
 <body>
     <table align = "center"   width= 100% >
         <tr>
-            <td width= 30%>
-                <h1><strong>Welcome to <a href="index.php">Fotur</a></strong></h1>
-
+            <td width= 20%>
+                <a href="index.php"><img style="height: 60px; width:200px;" src="assets/logo/Fotur.png"></a>
             </td>
-            <td colspan="2" width="60%" align="center">
+            <td colspan="2" width="50%" align="center">
                 <form action="v.php" method="get">
                     <input type="text" name="name" style="width: 500px; height: 30px" >
                     <input type="submit"  value="Search" name= "search" style="width: 140px; height: 35px">
@@ -24,7 +23,7 @@
                     
 
             </td>
-            <td align="center">
+            <td align="center" width="25%">
                 <h2><a href="sign_in_up.php">Sign In</a></h2>
                 <p>Don't have an account.<a href="register.php">Register</a></p>        
             </td>
@@ -38,21 +37,20 @@
                     <li><a href="p_charger.php">Charger</a></li>
                 </ul>
             </td>
-            
-            <!-- part for home page  starts-->
+            <!-- part for cart page  starts-->
 
 
              <td width="100%" colspan="3">
                  <table height="50px" border = "1">
                      <tr>
-                         <td width="450px">Item</td>
-                         <td width="100px">Quantity</td>
-                         <td width="200px">Unit Price</td>
-                         <td width="250px">Sub Total</td>
+                         <td align="center" width="450px">Item</td>
+                         <td align="center" width="100px">Quantity</td>
+                         <td align="center" width="200px">Unit Price</td>
+                         <td align="center" width="250px">Sub Total</td>
                      </tr>
                      <tr>
-                         <td>    
-                            <img src="https://bd.daraz.io/Ky4-aSuCi3GjweBU1HPrXzXxvrQ=/fit-in/60x60/filters:fill(white):sharpen(1,0,false):quality(80)/product/95/1557/1.jpg?1213"><br>
+                         <td> 
+                            <img align="center" src="assets/img/mobile.jpg"><br>
                             SMARTPHONES <br>
                             SAMSUNG Galaxy A6 Smartphone 5.6" - 4GB RAM - 32GB ROM - 16MP - Blue <br>
                             <a href="remove.php">RemoveItem</a>
@@ -72,8 +70,8 @@
                             ৳ 27,900.00                            
                          </td>
                          <tr>
-                         <td>    
-                            <img src="https://bd.daraz.io/jkJPzPqDWyA52cgp8L5s30pQua8=/fit-in/60x60/filters:fill(white):sharpen(1,0,false):quality(80)/product/13/917/1.jpg?3101"><br>
+                         <td>
+                            <img align="center" height="60px" width="60px" src="assets/img/charger.jpg"><br>
                             PHONE CHARGERS <br>
                             XIAOMI Mirco USB Adapter with Cable - Black<br>
                             <a href="remove.php">RemoveItem</a>
@@ -103,9 +101,9 @@
                          <td>
                              Total: <strong>৳ 29,380.00</strong> 
                          </td>
-                         <td></td>
-                         <td colspan="2" align="right">
-                             <button style="width: 200px"> Proceed to Checkout</button>
+                         
+                         <td colspan="3" align="right">
+                            <a href="checkout.php"> <button style="width: 200px"> Proceed to Checkout</button></a>
                          </td>
                      </tr>
 
@@ -120,47 +118,50 @@
 
         <tr>
             <td colspan="5" width=80%> 
-                <table width=100%>
+                <table align="center" width=70%>
                     <tr>
                         <td align="center" colspan="4"><h2>People are also looking for</h2></td>
                     </tr>
                     <tr>
                         <td>
+                            <a href="products.php">
                             <img src="https://cdn2.gsmarena.com/vv/bigpic/oneplus-6-.jpg">
-                            <br>One Plus 6 <br>
+                            <br>One Plus 6 </a><br>
                             8/6 GB RAM & 64/128 GB ROM <br>
                             $900
 
 
                         </td>
                         <td>
+                             <a href="products.php">
                             <img src="https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-x.jpg">
-                            <br>Iphone X <br>
+                            <br>Iphone X </a><br>
                             8/6 GB RAM & 64/128 GB ROM <br>
                             $1900
 
 
                         </td>
                         <td>
+                             <a href="products.php">
                             <img src="https://cdn2.gsmarena.com/vv/bigpic/xiaomi-mi8.jpg">
-                            <br>Xiaomi MI 8 <br>
+                            <br>Xiaomi MI 8</a> <br>
                             8/6 GB RAM & 64/128 GB ROM <br>
                             $1100
 
 
                         </td>
                         <td>
-                            <img src="https://bd.daraz.io/cms/2018/W25/MFL/bf1.jpg">
-
-
+                             <a href="offer.php">
+                            <img src="https://bd.daraz.io/cms/2018/W25/MFL/bf1.jpg"></a>
                         </td>
                     </tr>
 
-                    
-                                    </table>
+                </table>
 
             </td>
         </tr>
+        <!-- part for cart page  starts-->
+
         <tr>    
             
         <td colspan="2">
@@ -201,7 +202,31 @@
             }   
         ?> 
         </td>
-    </tr>
+        <tr>
+<!--             <td colspan="5">
+                <hr>
+            </td> -->
+        </tr>
+        <tr>
+            <td colspan="3" align="left">
+                <img src="assets/img/payment.png">
+          </td>
+            <td colspan ="2">
+              <table>
+                <tr>
+                <td ><a href="https://www.facebook.com/"><img src="assets/logo/facebook.png" height="70" width="70"></a></td>
+                <td><a href="https://www.instagram.com/">
+                <img src="assets/logo/instagram.png" height="70" width="70"></a></td>
+                  <td><a href="https://www.twitter.com/" >
+                <img src="assets/logo/twitter.png" height="70" width="70"></a></td>
+                <td><a href="https://www.youtube.com/">
+                <img src="assets/logo/youtube.png" height="70" width="70"></a>
+                </td>
+                </tr>
+              </table>
+               
+              </td>
+        </tr>   
 
         <tr>
             <td align = "center" colspan="5" >

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>||About Page||</title>
+    <title>||Product Details Page||</title>
 </head>
 <body>
     <table align = "center"   width= 100% >
@@ -10,7 +10,7 @@
                 <a href="index.php"><img style="height: 60px; width:200px;" src="assets/logo/Fotur.png"></a>
             </td>
             <td colspan="2" width="50%" align="center">
-                <form action="v.php" method="get">
+                <form action="index.php" method="get">
                     <input type="text" name="name" style="width: 500px; height: 30px" >
                     <input type="submit"  value="Search" name= "search" style="width: 140px; height: 35px">
                 </form>       
@@ -37,30 +37,60 @@
                     <li><a href="p_charger.php">Charger</a></li>
                 </ul>
             </td>
-    		
-			<!-- part for About page  starts-->
-		
-			<td align="center" colspan="2">
-				<h3 align="center">About Us</h3>
-				<p>
-				Launched in 2018, Fotur is BD's online shopping destination of choice<br> 
-				now only present in Bangladesh. Supported by a wide range of tailored<br>
-				marketing,data and service solutions. Various types of products available <br>
-				in Futur.It offers a diverse assortment of products in categories ranging<br>
-				from consumer electronics. Focused on providing an excellent customer <br>
-				experience,it offers multiple payment methods including cash-on-delivery,<br>
-				comprehensive customer care and hassle-free returns.Fotur is owned by <br>
-				Futur Bangladesh Limited.</p>
-			
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			</td>
-			<td colspan="1">
-				
-			</td>
 
-		</tr>
+			<!-- part for Product Details page  starts-->
 
-    		<!-- part for About page ends -->
+    		<td colspan="4" align="center">
+    			<!-- <h1> Product Details</h1>
+    			<table >
+    					 	<tr>  <td>Product Name: </td> </tr>
+    					 	<tr>  <td>Brand Name:</td><br></tr>
+    					 	<tr>  <td>Product ID:</td> </tr>
+    					 	<tr>  <td>Availability:</td> </tr>
+    					 	<tr>  <td>Quantity(1-100):</td>
+    					 		<td><input type="number" name="quantity" min="1" max="100"></td> 
+    					 	</tr>
+    			</table>
+    			<form action="cart.php">
+               		<input type="submit" name="cart_button" value="Add to Cart"/>
+            	</form>  -->
+            	<table>
+
+                    <tr>
+                        <td>
+                            <img src="https://bd.daraz.io/tm2kqm1cYkuJzgW0d4KJvCTdn-s=/fit-in/220x220/filters:fill(white):sharpen(1,0,false):quality(80)/product/20/4557/1.jpg?5489" style="height: 400px; width: 350px">
+                        </td>
+                        <td>
+                            <strong>Samsung Galaxy S8 and S8 Plus With Type-C Cable – Black</strong><br>
+
+                            Fast charging<br>
+                            Wall charger and car charger<br>
+                            Type-C to USB cable<br>
+                            Compatible with all Samsung devices<br>
+                            Normal speed without a hitch.<br>
+
+
+                            <strong>৳ 680.00</strong> 
+                            <form action="cart.php" method="post">
+                                
+                             <select name="quantity" style="width:80px;height:30px">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                                <input type="submit" name="buy" value="Buy Now">
+                                
+                            </form>
+                        </td>
+                    </tr>
+            	</table>
+            	<br><br><br><br>
+    		</td>
+
+    		<!-- part for Product Details page ends -->
+		<tr><td  colspan="5" align="center"><a href="offer.php"><img src="Product/offer/offer1.jpg" height="360px" width= "780px"></a></td></tr>
+        </tr>
+        </tr>
         <td colspan="2">
             <h2>Let us help you</h2>
             <ul>

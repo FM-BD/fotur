@@ -7,11 +7,10 @@
     <table align = "center"   width= 100% >
         <tr>
             <td width= 20%>
-                <h1><strong>Welcome to <a href="index.php">Fotur</a></strong></h1>
-
+                <a href="index.php"><img style="height: 60px; width:200px;" src="assets/logo/Fotur.png"></a>
             </td>
             <td colspan="2" width="50%" align="center">
-                <form action="v.php" method="get">
+                <form action="index.php" method="get">
                     <input type="text" name="name" style="width: 500px; height: 30px" >
                     <input type="submit"  value="Search" name= "search" style="width: 140px; height: 35px">
                 </form>       
@@ -42,7 +41,7 @@
 			<!-- part for home page  starts-->
 
     		<td colspan="4" align="center">
-    			<iframe src="https://images.indianexpress.com/2018/04/oneplus-6-mockup-video-759.jpg" height="425px" width= "760px"></iframe>
+    			<a href="products.php"> <img src="Product/5brand.jpg" width="880px" height="480px"> </a>
     			<table>
     				<tr>
     					<td>
@@ -55,85 +54,102 @@
 
     					</td>
     					<td>
+                            <a href="product_details.php">
     						<img src="https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-x.jpg">
-    						<br>Iphone X <br>
+    						<br>Iphone X </a><br>
     						8/6 GB RAM & 64/128 GB ROM <br>
     						$1900
 
 
     					</td>
     					<td>
+                            <a href="product_details.php">
     						<img src="https://cdn2.gsmarena.com/vv/bigpic/xiaomi-mi8.jpg">
-    						<br>Xiaomi MI 8 <br>
+    						<br>Xiaomi MI 8</a> <br>
     						8/6 GB RAM & 64/128 GB ROM <br>
     						$1100
 
 
     					</td>
     					<td>
-    						<img src="https://bd.daraz.io/cms/2018/W27/chorom/BF.jpg">
+    						<a href="offer.php">
+                            <img src="https://bd.daraz.io/cms/2018/W27/chorom/BF.jpg">
+                            </a>
 
 
     					</td>
     				</tr>
                     <tr>
                         <td>
+                            <a href="product_details.php">
                             <img src="https://cdn2.gsmarena.com/vv/bigpic/oneplus-6-.jpg">
-                            <br>One Plus 6 <br>
+                            <br>One Plus 6 </a><br>
                             8/6 GB RAM & 64/128 GB ROM <br>
                             $900
 
 
                         </td>
                         <td>
+                            <a href="product_details.php">
                             <img src="https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-x.jpg">
-                            <br>Iphone X <br>
+                            <br>Iphone X</a> <br>
                             8/6 GB RAM & 64/128 GB ROM <br>
                             $1900
 
 
                         </td>
                         <td>
+                            <a href="product_details.php">
                             <img src="https://cdn2.gsmarena.com/vv/bigpic/xiaomi-mi8.jpg">
-                            <br>Xiaomi MI 8 <br>
+                            <br>Xiaomi MI 8</a> <br>
                             8/6 GB RAM & 64/128 GB ROM <br>
                             $1100
 
 
                         </td>
                         <td>
+                            <a href="offer.php">
                             <img src="https://bd.daraz.io/cms/2018/W25/MFL/bf1.jpg">
+                        </a>
 
 
                         </td>
                     </tr>
                     <tr>
                         <td>
+                            <a href="product_details.php">
                             <img src="https://cdn2.gsmarena.com/vv/bigpic/oneplus-6-.jpg">
-                            <br>One Plus 6 <br>
+                            <br>One Plus 6 </a> <br>
                             8/6 GB RAM & 64/128 GB ROM <br>
-                            $900
+                            $90000
 
 
                         </td>
                         <td>
+                            <a href="product_details.php">
+
                             <img src="https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-x.jpg">
-                            <br>Iphone X <br>
+                            <br>Iphone X</a> <br>
                             8/6 GB RAM & 64/128 GB ROM <br>
                             $1900
 
 
                         </td>
                         <td>
+                            <a href="product_details.php">
+
                             <img src="https://cdn2.gsmarena.com/vv/bigpic/xiaomi-mi8.jpg">
-                            <br>Xiaomi MI 8 <br>
+                            <br>Xiaomi MI 8 </a><br>
                             8/6 GB RAM & 64/128 GB ROM <br>
                             $1100
 
 
                         </td>
                         <td>
+                            <a href="offer.php">
+
                             <img src="https://bd.daraz.io/cms/2018/W27/chorom/BF.jpg">
+                        </a>
 
 
                         </td>
@@ -156,15 +172,20 @@
 
                         </td>
                         <td>
+                            <a href="product_details.php">
+
                             <img src="https://cdn2.gsmarena.com/vv/bigpic/xiaomi-mi8.jpg">
-                            <br>Xiaomi MI 8 <br>
+                            <br>Xiaomi MI 8</a> <br>
                             8/6 GB RAM & 64/128 GB ROM <br>
                             $1100
 
 
                         </td>
                         <td>
+                            <a href="offer.php">
+
                             <img src="https://bd.daraz.io/cms/2018/W25/MFL/bf1.jpg">
+                        </a>
 
 
                         </td>
@@ -175,8 +196,9 @@
 
 
     		<!-- part for home page ends -->
-<tr><td colspan="5" align="center"><iframe src="https://static.daraz.com.bd/api/8766952/images/15a1dfeee1296__Chorom_gorom_S_D-5.jpg" height="360px" width= "780px"></iframe></td></tr>
-</tr>
+                            
+            <tr><td  colspan="5" align="center"><a href="offer.php"><img src="Product/offer/offer1.jpg" height="360px" width= "780px"></a></td></tr>
+        </tr>
         <td colspan="2">
             <h2>Let us help you</h2>
             <ul>
@@ -215,6 +237,31 @@
             }   
         ?> 
         </td>
+        <tr>
+<!--             <td colspan="5">
+                <hr>
+            </td> -->
+        </tr>
+        <tr>
+            <td colspan="3" align="left">
+                <img src="assets/img/payment.png">
+          </td>
+            <td colspan ="2">
+              <table>
+                <tr>
+                <td ><a href="https://www.facebook.com/"><img src="assets/logo/facebook.png" height="70" width="70"></a></td>
+                <td><a href="https://www.instagram.com/">
+                <img src="assets/logo/instagram.png" height="70" width="70"></a></td>
+                  <td><a href="https://www.twitter.com/" >
+                <img src="assets/logo/twitter.png" height="70" width="70"></a></td>
+                <td><a href="https://www.youtube.com/">
+                <img src="assets/logo/youtube.png" height="70" width="70"></a>
+                </td>
+                </tr>
+              </table>
+               
+              </td>
+        </tr>   
 
         <tr>
             <td align = "center" colspan="5" >
