@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,8 +23,6 @@
                     <tr><td><a href="cart.php"><img src="cart_s.png"></a></td></tr>
                     <tr><td align="center"><a href="cart.php"><strong>Cart</strong></a></td></tr>
                 </table>
-                    
-
             </td>
             <td align="center" width="25%">
                 <h2><a href="sign_in_up.php">Sign In</a></h2>
@@ -36,13 +37,13 @@
              
 				<table>
 					<tr>
-						<form action="user_admin.php" method="post">
+						<form action="sign_in_up.php" method="post">
                         <td align="left"><label>Name</label></td>
-                        <td><input type="text" name="user_name"  style="width: 300px; height: 30px" ></td>
+                        <td><input type="text" name="uname"  style="width: 300px; height: 30px" ></td>
                     </tr>
                     <tr>
                         <td align="left"><label>Password</label></td>
-                        <td><input type="password" name="password"  style="width: 300px; height: 30px"></td>
+                        <td><input type="password" name="pass"  style="width: 300px; height: 30px"></td>
                     </tr>
                     <tr>
                         <td colspan="2" align="center"><input type="submit"  value="Login" name= "submit" style="width: 140px; height: 35px; "></td>
@@ -52,10 +53,61 @@
 						<td colspan="2" align="right"><a href="forgot_password.php">*Forgot password ?</a></td>
 					</tr>
 				</table>
+                <?php
+if (isset($_POST['submit'])) {
+    # code...
+    $con= mysqli_connect("localhost","root", "","fotur");
+    // $servername = "localhost";
+    // $username = "root";
+    // $password = "";
+    // $con = new mysqli($servername, $username, $password);
+    if (!$con) {
+        die("connction Error :".mysqli_connect_error());
+
+        # code...
+    }
+    else
+    {
+        $str= "select * from user where user_name= '".$_POST['uname']."' and user_password= '".$_POST['pass']."' ";
+        $result = mysqli_query($con,$str);
+
+        if (mysqli_num_rows($result)>0) {
+            $row = mysqli_fetch_array($result);
+            echo "Hello".$row['user_name'];
+            session_start();
+            $_SESSION['user_name'] = $row['user_name'];
+            $_SESSION['first_name'] = $row['first_name'];
+            $_SESSION['last_name'] = $row['last_name'];
+            $_SESSION['email'] = $row['email'];
+            $_SESSION['dob'] = $row['dob'];
+            $_SESSION['gender'] = $row['gender']; 
+            $_SESSION['city'] = $row['city']; 
+            $_SESSION['postal_code'] = $row['postal_code']; 
+            $_SESSION['country'] = $row['country'];
+            $_SESSION['id'] = $row['id'];
+            $_SESSION['address'] = $row['address'];
+
+            
+
+            header('Location:user_admin.php');
+            # code...
+        }
+//         if ($result=mysqli_query($con,$str))
+//     {
+//   // Return the number of rows in result set
+//   $rowcount=mysqli_num_rows($result);
+//   printf("Result set has %d rows.\n",$rowcount);
+//   // Free result set
+//   mysqli_free_result($result);
+//   }
+//   else
+//     {echo "string";}
+//     }
+ }
+}
+
+?>
 				
-
-
-
                 <br>
                 <br>
                 <br><br><br>

@@ -128,6 +128,28 @@
 	</table>				
 </body>
 </html> -->
+
+<?php 
+
+session_start();
+$page = "sign_in_up.php";
+function fnx($page) {
+    header("location: " . $page);
+}
+
+
+if (isset($_SESSION['user_name'])) {
+ 	# code...
+ 	$var = 0;
+ }
+else
+{
+	fnx($page);
+}
+
+
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -154,7 +176,22 @@
 
             </td>
             <td align="center" width="25%">
-                <h2><a href="sign_in_up.php">Logout</a></h2>
+            	<form method="post" action="user_admin.php">
+            		<input type="submit" name="logout" value="Logout">
+            	</form>
+ 			<?php if(isset($_POST['logout']))
+                    {
+                        session_destroy();
+                        echo "<meta http-equiv=\"refresh\" content=\"0;URL=user_admin.php\">";
+                    }
+                    else
+                    {
+                        $var =1;
+                    }
+
+?>
+
+                 
                      
             </td>
         </tr>
@@ -173,51 +210,50 @@
 				<h3 align="center">USER INFORMATION</h3>
 			<table align="center"  width="80%">
 				<?php
-					if(isset($_POST["submit"]))
-					{ echo "<tr><td><h4>Hello " ;
-				echo $_POST["user_name"]."</h4></td></tr>";
-								}
+					 echo "<tr><td><h4>Hello " ;
+				echo $_SESSION['user_name']."</h4></td></tr>";
+								
 				?>
 				<tr>
 					<td align="center" height="50px"; width="100px">ID</td>
-					<td  height="50px"; width="100px">007</td>
+					<td  height="50px"; width="100px"><?php echo $_SESSION['id']; ?></td>
 				</tr>
 				<tr>
 					<td align="center" height="50px"; width="100px">Name</td>
-					<td  height="50px"; width="100px">Mr. X</td>
+					<td  height="50px"; width="100px"><?php echo "Mr. ".$_SESSION['first_name']." ".$_SESSION['last_name']; ?></td>
 				</tr>
 				<tr>
 					<td align="center" height="50px"; width="100px">USER NAME</td>
-					<td  height="50px"; width="100px">Dragon Sakil</td>
+					<td  height="50px"; width="100px"><?php echo $_SESSION['user_name']; ?></td>
 				</tr>
 				<tr>
 					<td align="center" height="50px"; width="100px">DOB</td>
-					<td  height="50px"; width="100px">12-08-1991</td>
+					<td  height="50px"; width="100px"><?php echo $_SESSION['dob']; ?></td>
 					
 				</tr>
 				<tr>
-					<td align="center" height="50px"; width="100px">Gender</td>
+					<td align="center" height="50px"; width="100px"><?php echo $_SESSION['gender']; ?></td>
 					<td  height="50px"; width="100px">male</td>
 					
 				</tr>
 				<tr>
 					<td align="center" height="50px"; width="100px">Address</td>
-					<td height="50px"; width="100px">H#40,R#10,Section#6,Mirpur</td>
+					<td height="50px"; width="100px"><?php echo $_SESSION['address']; ?></td>
 					
 				</tr>
 				<tr>
 					<td align="center" height="50px"; width="100px">City</td>
-					<td height="50px"; width="100px">Dhaka</td>
+					<td height="50px"; width="100px"> <?php $_SESSION['city']; ?></td>
 					
 				</tr>
 				<tr>
-					<td align="center" height="50px"; width="100px">Post code</td>
-					<td height="50px"; width="100px">3017</td>
+					<td align="center" height="50px"; width="100px">Postal Code</td>
+					<td height="50px"; width="100px"><?php $_SESSION['postal_code']; ?></td>
 					
 				</tr>
 				<tr>
 					<td align="center" height="50px"; width="100px">Country</td>
-					<td height="50px"; width="100px">Bangladesh</td>
+					<td height="50px"; width="100px"><?php $_SESSION['country']; ?></td>
 				</tr>
 				<tr>
 					<td align="center" height="50px"; width="100px"><a href="user_settings.php"><STRONG>Account Settings</STRONG></a></td>
